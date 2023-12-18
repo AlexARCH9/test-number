@@ -8,7 +8,7 @@ const sequelize = new Sequelize(config.URL_DATABASE);
 // Models
 sequelize.define("Phones", {
   id: {
-    type: DataTypes.UUIDV4,
+    type: DataTypes.STRING,
     primaryKey: true,
     defaultValue: randomUUID(),
   },
